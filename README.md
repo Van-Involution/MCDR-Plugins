@@ -8,4 +8,4 @@ The following are description of plugins:
 
 ## Seed
 
-Reforged from **[MCDReforged](https://github.com/MCDReforged)/[Seed](https://github.com/MCDReforged/Seed)**, use command `!!seed` to get seed of server, apply to server that 
+Reforged from **[MCDReforged](https://github.com/MCDReforged)/[Seed](https://github.com/MCDReforged/Seed)**, use command `!!seed` to get seed of server, apply to server that disabled op permission but published seed (Such as most of **vanilla survival** server).  
