@@ -8,10 +8,10 @@ PLUGIN_METADATA = {
     'id': 'seed',
     'version': '1.0.0',
     'name': 'Seed',
-    'description': 'rue',
+    'description': 'Get seed of server for "non-op" by using command "!!seed"',
     'author': [
-        'Van_Involution',  # Reforged to  MCDR 1.0.0
-        'White_Paper'  # Which  base
+        'Van_Involution',  # Reforged to fit MCDR 1.x
+        'White_Paper'  # Source of inspiration
     ],
     'dependencies': {
         'mcdreforged': '>=1.0.0',
@@ -21,8 +21,7 @@ PLUGIN_METADATA = {
 
 def on_load(server: ServerInterface, old):
     server.logger.info('Rua!')
-    help_message = RTextTranslation(translation_key='help.message.seed')
-    server.register_help_message(prefix='!!seed', message=help_message)
+    server.register_help_message(prefix='!!seed', message='Get seed of server')
     server_seed = get_seed(server)
     server.register_command(
         Literal('!!seed').runs(lambda src: src.reply(server_seed))
