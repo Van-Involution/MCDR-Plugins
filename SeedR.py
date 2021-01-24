@@ -5,9 +5,9 @@ from mcdreforged.api.command import Literal
 from mcdreforged.api.rtext import *
 
 PLUGIN_METADATA = {
-    'id': 'seed',
+    'id': 'seed_reforged',
     'version': '1.0.0',
-    'name': 'Seed',
+    'name': 'SeedR',
     'description': 'Get seed of server for "non-op" by using command "!!seed"',
     'author': [
         'Van_Involution',  # Reforged to fit MCDR 1.x
