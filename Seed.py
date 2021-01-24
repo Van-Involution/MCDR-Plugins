@@ -13,6 +13,7 @@ PLUGIN_METADATA = {
         'Van_Involution',  # Reforged to fit MCDR 1.x
         'White_Paper'  # Source of inspiration
     ],
+    'link': 'https://github.com/Van-Involution/MCDR-Plugins',
     'dependencies': {
         'mcdreforged': '>=1.0.0',
     }
@@ -20,11 +21,9 @@ PLUGIN_METADATA = {
 
 
 def on_load(server: ServerInterface, old):
-    server.logger.info('Rua!')
     server.register_help_message(prefix='!!seed', message='Get seed of server')
-    server_seed = get_seed(server)
     server.register_command(
-        Literal('!!seed').runs(lambda src: src.reply(server_seed))
+        Literal('!!seed').runs(lambda src: src.reply(get_seed(server)))
     )
 
 
