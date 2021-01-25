@@ -8,7 +8,7 @@ PLUGIN_METADATA = {
     'id': 'seed_reforged',
     'version': '1.0.0',
     'name': 'SeedR',
-    'description': 'Get seed of server for "non-op" by using command "!!seed"',
+    'description': 'For "non-op", use command "!!seed" to get seed of server',
     'author': [
         'Van_Involution',  # Reforged to fit MCDR 1.x
         'White_Paper'  # Source of inspiration
