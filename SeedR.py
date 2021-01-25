@@ -31,7 +31,7 @@ def get_seed(server: ServerInterface):
     seed = server.rcon_query('/seed').split('[')[1].split(']')[0]
     seed_prefix = RTextTranslation(translation_key='commands.seed.success')
     seed_rtext = RText(text=seed, color=RColor.green) \
-        .set_click_event(action=RAction.copy_to_clipboard, value=seed) \
-        .set_hover_text(RTextTranslation(translation_key='chat.copy.click'))
+        .c(action=RAction.copy_to_clipboard, value=seed) \
+        .h(RTextTranslation(translation_key='chat.copy.click'))
     seed_rtext_list = RTextList(seed_prefix, '[', seed_rtext, ']')
     return seed_rtext_list
