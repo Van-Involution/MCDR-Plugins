@@ -20,13 +20,6 @@ PLUGIN_METADATA = {
 }
 
 
-def on_load(server: ServerInterface, old):
-    server.register_help_message(prefix='!!seed', message='Get seed of server')
-    server.register_command(
-        Literal('!!seed').runs(lambda src: src.reply(get_seed(server)))
-    )
-
-
 def get_seed(server: ServerInterface):
     seed = server.rcon_query('/seed').split('[')[1].split(']')[0]
     seed_prefix = RTextTranslation(translation_key='commands.seed.success')
@@ -35,3 +28,10 @@ def get_seed(server: ServerInterface):
         .h(RTextTranslation(translation_key='chat.copy.click'))
     seed_rtext_list = RTextList(seed_prefix, '[', seed_rtext, ']')
     return seed_rtext_list
+
+
+def on_load(server: ServerInterface, old):
+    server.register_help_message(prefix='!!seed', message='Get seed of server')
+    server.register_command(
+        Literal('!!seed').runs(lambda src: src.reply(get_seed(server)))
+    )
