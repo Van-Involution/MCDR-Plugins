@@ -13,7 +13,7 @@ PLUGIN_METADATA = {
         'Van_Involution',  # Reforged to fit MCDR 1.x
         'White_Paper'  # Source of inspiration
     ],
-    'link': 'https://github.com/Van-Involution/MCDR-Plugins',
+    'link': 'https://github.com/Van-Involution/SeedR',
     'dependencies': {
         'mcdreforged': '>=1.0.0',
     }
