@@ -2,7 +2,7 @@
 
 from mcdreforged.api.types import ServerInterface
 from mcdreforged.api.command import Literal
-from mcdreforged.api.rtext import *
+from mcdreforged.api.rtext import RText, RTextTranslation, RTextList, RColor, RAction
 
 PLUGIN_METADATA = {
     'id': 'seed_reforged',
