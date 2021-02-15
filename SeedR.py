@@ -1,5 +1,3 @@
-# -*- coding: UTF-8 -*-
-
 from mcdreforged.api.types import ServerInterface
 from mcdreforged.api.command import Literal
 from mcdreforged.api.rtext import RText, RTextTranslation, RTextList, RColor, RAction
