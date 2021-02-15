@@ -4,7 +4,7 @@ from mcdreforged.api.rtext import RText, RTextTranslation, RTextList, RColor, RA
 
 PLUGIN_METADATA = {
     'id': 'seed_reforged',
-    'version': '1.0.1',
+    'version': '1.0.2',
     'name': 'SeedR',
     'description': 'For non-op, use command "!!seed" to get seed of server',
     'author': [
