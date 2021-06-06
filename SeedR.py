@@ -1,6 +1,6 @@
 from mcdreforged.api.types import ServerInterface
 from mcdreforged.api.command import Literal
-from mcdreforged.api.rtext import RText, RTextTranslation, RTextList, RColor, RAction
+from mcdreforged.api.rtext import RTextBase, RText, RTextTranslation, RTextList, RColor, RAction
 
 PLUGIN_METADATA = {
     'id': 'seed_reforged',
@@ -21,7 +21,7 @@ NAME = PLUGIN_METADATA['name']
 LINK = PLUGIN_METADATA['link']
 
 
-def get_seed(server: ServerInterface):
+def get_seed(server: ServerInterface) -> RTextBase:
     try:
         seed = server.rcon_query('/seed').split('[')[1].split(']')[0]
         return RTextList(
