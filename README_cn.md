@@ -37,7 +37,8 @@ plugin_directories:
 插件定义了一个可供引用的函数：
 
 ```Python
-def get_seed(server: ServerInterface) -> Union[RTextList，RText]
+def get_seed(server: ServerInterface) -> RTextBase:
+    ...
 ```
 
 此函数返回原版格式的经过翻译的种子消息（**RText** 类型）。调用此函数时，请确保运行环境中 MCDR 与服务端的 **RCON** 连接已建立。

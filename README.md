@@ -30,14 +30,15 @@ plugin_directories:
 
 ### Command
 
-Plugin provides cmooand `!!seed` without any parameters to get server seed, reply translated vanilla message with hover text and click-to-copy-seed.
+Plugin provides command `!!seed` without any parameters to get server seed, reply translated vanilla message with hover text and click-to-copy-seed.
 
 ### Function
 
 Plugin defines a callable function:
 
 ```Python
-def get_seed(server: ServerInterface) -> Union[RTextList, RText]
+def get_seed(server: ServerInterface) -> RTextBase:
+    ...
 ```
 
 This function returns translated vanilla format seed message (**RText** class). When call this function, please make sure MCDR has **RCON** connection with server in the runtime environment.
