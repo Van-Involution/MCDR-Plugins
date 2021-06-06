@@ -8,10 +8,10 @@ PLUGIN_METADATA = {
     'name': 'SeedR',
     'description': 'For non-op, use command "!!seed" to get seed of server',
     'author': [
-        'Van_Involution',  # Reforged to fit MCDR 1.x
+        'Van_Nya',  # Reforged to fit MCDR 1.x
         'White_Paper'  # Source of inspiration
     ],
-    'link': 'https://github.com/Van-Involution/SeedR',
+    'link': 'https://github.com/Van-Nya/SeedR',
     'dependencies': {
         'mcdreforged': '>=1.0.0',
     }
